@@ -1,0 +1,82 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte atualizada */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Cor de fundo */
+}
+
+header {
+    background-color: #ffffff; /* Cor de fundo do cabeçalho */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+header .logo {
+    max-width: 1000px; /* Ajuste o tamanho do logo */
+}
+
+nav {
+    background-color: #005599;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: #003366;
+    font-size: 2em; /* Tamanho da fonte */
+}
+
+.servicos, .projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    background-color: white; /* Cor dos cards */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

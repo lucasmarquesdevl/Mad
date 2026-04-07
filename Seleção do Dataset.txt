@@ -1,0 +1,88 @@
+Seleção do Dataset
+Dataset Escolhido: Iris Dataset
+Descrição: O Iris Dataset contém 150 amostras de flores de íris, com 4 características (comprimento e largura das pétalas e sépalas) e 3 classes (Iris-setosa, Iris-versicolor, Iris-virginica).
+Fontes Confiáveis:
+Kaggle
+UCI Machine Learning Repository
+
+
+
+Preparação e Limpeza dos Dados
+import pandas as pd
+
+# Carregar o dataset
+url = 'https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
+columns = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
+df = pd.read_csv(url, header=None, names=columns)
+
+# Inspecionar os dados
+print(df.head())
+print(df.info())
+
+# Limpar os dados (não há valores faltantes neste dataset, mas aqui está como você poderia fazer)
+df.drop_duplicates(inplace=True)
+
+
+
+Análise Descritiva Inicial
+
+# Estatísticas básicas
+stats = df.describe()
+print(stats)
+
+# Classificação dos tipos de dados
+print(df.dtypes)
+
+
+
+Visualização de Dados
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Configurações de estilo
+sns.set(style="whitegrid")
+
+# Histograma
+plt.figure(figsize=(10, 6))
+sns.histplot(df['sepal_length'], bins=10, kde=True)
+plt.title('Distribuição do Comprimento da Sépala')
+plt.xlabel('Comprimento da Sépala (cm)')
+plt.ylabel('Frequência')
+plt.show()
+
+# Box plot
+plt.figure(figsize=(10, 6))
+sns.boxplot(x='species', y='sepal_length', data=df)
+plt.title('Box Plot do Comprimento da Sépala por Espécie')
+plt.show()
+
+# Gráfico de dispersão
+plt.figure(figsize=(10, 6))
+sns.scatterplot(x='sepal_length', y='sepal_width', hue='species', data=df)
+plt.title('Gráfico de Dispersão: Comprimento vs Largura da Sépala')
+plt.show()
+
+
+
+Análise Exploratória Aprofundada
+
+# Correlação
+correlation = df.corr()
+plt.figure(figsize=(8, 6))
+sns.heatmap(correlation, annot=True, cmap='coolwarm')
+plt.title('Matriz de Correlação')
+plt.show()
+
+
+Interpretação dos Resultados
+Conclusões: As análises mostraram que existe uma correlação significativa entre o comprimento e a largura das pétalas. A Iris-setosa é claramente distinta das outras duas espécies, com comprimentos e larguras de pétalas menores.
+Implicações: Os resultados podem ser úteis para biólogos e floricultores na identificação e categorização de espécies de íris.
+
+
+
+Apresentação dos Resultados
+Relatório Final: Um relatório pode ser preparado utilizando as visualizações acima e as conclusões discutidas. Inclua gráficos e uma seção sobre limitações e futuras análises.
+
+Considerações Éticas
+Discussão Ética: O Iris Dataset é um exemplo de dados que não contém informações pessoais. No entanto, é sempre importante considerar a privacidade e o consentimento ao trabalhar com dados que envolvem informações sensíveis.
