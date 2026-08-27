@@ -1,72 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>MAD Gestão e Desenvolvimento de Projetos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MAD Gestão e Desenvolvimento de Projetos: soluções multidisciplinares em tecnologia, gestão e educação desde 2001.">
+    <title>MAD | Gestão que movimenta projetos</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <img src="logo.jpg" alt="Logo MAD" class="logo"> <!-- Adicione seu logo aqui -->
-    <h1>MAD Gestão e Desenvolvimento de Projetos LTDA</h1>
-    <p>Desde 2001 oferecendo soluções multidisciplinares</p>
+<header class="site-header">
+    <a class="brand" href="#inicio" aria-label="MAD, voltar ao início"><span>M</span>AD</a>
+    <nav aria-label="Navegação principal">
+        <a href="#sobre">A MAD</a>
+        <a href="#servicos">Soluções</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato" class="nav-cta">Vamos conversar <span aria-hidden="true">↗</span></a>
+    </nav>
 </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#sobre">Sobre Nós</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#contato">Contato</a>
-</nav>
+<main>
+    <section class="hero" id="inicio">
+        <div class="hero-copy">
+            <p class="eyebrow">Gestão · Desenvolvimento · Impacto</p>
+            <h1>Ideias bem cuidadas <em>viram movimento.</em></h1>
+            <p class="hero-text">A MAD conecta estratégia, criatividade e execução para tirar projetos do papel e criar caminhos que permanecem.</p>
+            <div class="hero-actions"><a class="button button-primary" href="#servicos">Conheça nossas soluções <span>↗</span></a><a class="text-link" href="#sobre">Por que a MAD? <span>↓</span></a></div>
+        </div>
+        <div class="hero-art" aria-label="Composição gráfica representando conexão entre ideias">
+            <div class="art-label">MAD / 2001—2024</div><div class="art-number">24</div><div class="art-caption">anos criando<br>possibilidades</div><div class="art-line"></div>
+        </div>
+    </section>
 
-<section id="home">
-    <h2>Bem-vindo à MAD Gestão</h2>
-    <p>Somos uma microempresa especializada em serviços administrativos, consultoria, tecnologia, educação e muito mais. Conheça nossos projetos e soluções.</p>
-</section>
+    <section class="intro-band" id="sobre">
+        <p class="section-kicker">01 / Quem somos</p>
+        <div><h2>Uma parceira para<br><span>projetos com propósito.</span></h2><p>Desde 2001, atuamos em diferentes frentes para transformar desafios complexos em soluções simples, humanas e possíveis. Nossa força está em olhar o todo sem perder os detalhes.</p></div>
+        <div class="stats"><div><strong>24</strong><span>anos de experiência</span></div><div><strong>06</strong><span>frentes de atuação</span></div></div>
+    </section>
 
-<section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>Fundada em 2001, a MAD Gestão e Desenvolvimento de Projetos LTDA atua em diversas áreas com foco em inovação, ética e excelência.</p>
-</section>
+    <section class="section services-section" id="servicos">
+        <div class="section-heading"><div><p class="section-kicker">02 / O que fazemos</p><h2>Competência que<br><span>se adapta.</span></h2></div><p>Conhecimento multidisciplinar para cada etapa do seu projeto.</p></div>
+        <div class="service-grid">
+            <article class="service-card featured"><span class="service-index">01</span><h3>TI & Desenvolvimento</h3><p>Consultoria e soluções tecnológicas que tornam sua operação mais inteligente.</p><a href="#contato" aria-label="Saiba mais sobre TI e Desenvolvimento">↗</a></article>
+            <article class="service-card"><span class="service-index">02</span><h3>Consultoria Empresarial</h3><p>Planejamento estratégico e gestão para decisões mais seguras.</p><a href="#contato" aria-label="Saiba mais sobre Consultoria Empresarial">↗</a></article>
+            <article class="service-card"><span class="service-index">03</span><h3>Educação & Treinamento</h3><p>Capacitação profissional que estimula autonomia e crescimento.</p><a href="#contato" aria-label="Saiba mais sobre Educação e Treinamento">↗</a></article>
+            <article class="service-card"><span class="service-index">04</span><h3>Gestão de Espaços</h3><p>Administração de espaços artísticos, esportivos e imobiliários.</p><a href="#contato" aria-label="Saiba mais sobre Gestão de Espaços">↗</a></article>
+        </div>
+    </section>
 
-<section id="servicos">
-    <h2>Serviços</h2>
-    <div class="servicos">
-        <div class="card"><h3>TI e Desenvolvimento</h3><p>Consultoria e desenvolvimento de soluções tecnológicas.</p></div>
-        <div class="card"><h3>Consultoria Empresarial</h3><p>Planejamento estratégico e gestão empresarial.</p></div>
-        <div class="card"><h3>Gestão Imobiliária</h3><p>Administração e consultoria em imóveis.</p></div>
-        <div class="card"><h3>Educação e Treinamento</h3><p>Capacitação profissional e treinamentos especializados.</p></div>
-        <div class="card"><h3>Publicidade e Marketing</h3><p>Criação de campanhas e estratégias de comunicação.</p></div>
-        <div class="card"><h3>Gestão de Espaços</h3><p>Administração de espaços artísticos e esportivos.</p></div>
-    </div>
-</section>
+    <section class="projects-section" id="projetos"><div class="section-heading"><div><p class="section-kicker">03 / Em movimento</p><h2>Projetos que<br><span>deixam marca.</span></h2></div><p>Algumas das frentes que movimentam nosso trabalho.</p></div><div class="project-list"><article><span>01 — Gestão</span><h3>Projeto A</h3><p>Descrição breve do projeto A e seus resultados.</p><a href="#contato">Conhecer projeto <span>↗</span></a></article><article><span>02 — Desenvolvimento</span><h3>Projeto B</h3><p>Descrição breve do projeto B e seus resultados.</p><a href="#contato">Conhecer projeto <span>↗</span></a></article></div></section>
 
-<section id="projetos">
-    <h2>Projetos</h2>
-    <div class="projetos">
-        <div class="card"><h3>Projeto A</h3><p>Descrição breve do projeto A e seus resultados.</p></div>
-        <div class="card"><h3>Projeto B</h3><p>Descrição breve do projeto B e seus resultados.</p></div>
-    </div>
-</section>
+    <section class="contact-section" id="contato"><div class="contact-intro"><p class="section-kicker">04 / Vamos criar juntos</p><h2>Seu próximo<br><em>movimento começa aqui.</em></h2><p>Conte um pouco sobre o seu desafio. A gente responde para construir o próximo passo.</p><div class="contact-details"><a href="mailto:marzedias7@gmail.com">marzedias7@gmail.com</a><a href="tel:+552127129998">(21) 2712-9998</a><span>Niterói · RJ</span></div></div><form id="contactForm"><label for="name">Seu nome</label><input id="name" type="text" placeholder="Como podemos te chamar?" required><label for="email">Seu e-mail</label><input id="email" type="email" placeholder="voce@empresa.com" required><label for="message">Sobre o projeto</label><textarea id="message" placeholder="Conte brevemente o que você tem em mente" rows="3" required></textarea><button class="button button-light" type="submit">Enviar mensagem <span>↗</span></button><p class="form-status" aria-live="polite"></p></form></section>
+</main>
 
-<section id="contato">
-    <h2>Contato</h2>
-    <form>
-        <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-    <p>Email: marzedias7@gmail.com | Telefone: (21) 2712-9998</p>
-    <p>Endereço: Estrada Caetano Monteiro, nº 3704, Bloco 13 Apto 102, Pendotiba, Niterói - RJ</p>
-</section>
-
-<footer>
-    <p>&copy; 2024 MAD Gestão e Desenvolvimento de Projetos LTDA</p>
-</footer>
+<footer><a class="brand" href="#inicio"><span>M</span>AD</a><p>MAD Gestão e Desenvolvimento de Projetos LTDA</p><p>© <span id="year">2024</span> MAD. Todos os direitos reservados.</p></footer>
 
 <script src="script.js"></script>
 </body>
